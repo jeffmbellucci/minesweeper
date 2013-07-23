@@ -1,5 +1,12 @@
+require 'yaml'
+
 class MinesweeperBoard
   attr_accessor :board
+
+  def initialize
+    @start_time = Time.now
+  end
+
 
   def build_board
     @board = {}
@@ -58,6 +65,8 @@ class MinesweeperBoard
     move = move.split
     @board[[move[1].to_i,move[2].to_i]].reveal  if move.first == "r"
     @board[[move[1].to_i,move[2].to_i]].toggle_flag  if move.first == "f"
+    save if move.first == "s"
+    load if move.first == "l"
   end
 
 
@@ -67,7 +76,7 @@ class MinesweeperBoard
     puts "Let's begin"
     until game_over?
       display_board
-      puts "Choose to reveal using format r x y. \n Choose to flag using format f x y \n (S)ave or (L)oad"
+      puts "Choose to reveal using format r x y. \n Choose to flag using format f x y \n .....or (s)ave or (l)oad"
       move = gets.chomp.downcase
       play_move(move)
     end
@@ -77,8 +86,21 @@ class MinesweeperBoard
 
   def display_game_end_message
     puts "\n I'm sorry, you LOST!!" if game_lost?
-    puts "\n YOU WIN!!!!!" if game_won?
+    puts "\n YOU WIN!!!!! It only took you #{Time.now - @start_time} seconds." if game_won?
   end
+
+  def save
+    saved_game = YAML.dump(self)
+    File.open("minesweeper.txt", "w") { |file| file.puts saved_game}
+   end
+
+  def load
+    joe = YAML.load(File.read("minesweeper.txt"))
+    joe.play_game
+  end
+
+
+
 
 end
 
@@ -151,8 +173,6 @@ class Tile
      return "M" if @mined
      return adj_mine_count.to_s unless adj_mine_count == 0
      return " " if adj_mine_count == 0
-
-
    end
 
 end

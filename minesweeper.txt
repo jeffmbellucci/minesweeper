@@ -1,0 +1,817 @@
+--- &70240583033260 !ruby/object:MinesweeperBoard
+start_time: 2013-07-22 17:27:43.211891000 -07:00
+size:
+- 9
+- 9
+board:
+  ? - 1
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 1
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 4
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 5
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 6
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 7
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 8
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 1
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 1
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 5
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 6
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 7
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 8
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 2
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 2
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 2
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 1
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 3
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 5
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 3
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 6
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 7
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 8
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 3
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 3
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 5
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 6
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 7
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 8
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 4
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 4
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 5
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 6
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 7
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 8
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 5
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 5
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 6
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 2
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 6
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 6
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 6
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 5
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 6
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 6
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 6
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 7
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 6
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 8
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 6
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 6
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 6
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 5
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 6
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 7
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 8
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 7
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 9
+    - 7
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 7
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 5
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 6
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 7
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 8
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 9
+    - 8
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 8
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: false
+  ? - 1
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 1
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 2
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 2
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 3
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 3
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 4
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 4
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 5
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 5
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 6
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 6
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 7
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 7
+    - 9
+    gameboard: *70240583033260
+    mined: false
+    flagged: false
+    revealed: true
+  ? - 8
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 8
+    - 9
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+  ? - 9
+    - 9
+  : !ruby/object:Tile
+    coord:
+    - 9
+    - 9
+    gameboard: *70240583033260
+    mined: true
+    flagged: false
+    revealed: false
+minecount: 10
