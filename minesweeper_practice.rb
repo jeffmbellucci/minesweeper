@@ -1,12 +1,6 @@
 class MinesweeperBoard
   attr_accessor :board
 
-  def initialize(size)
-    @size = size
-    build_board
-
-  end
-
   def build_board
     @board = {}
     @size[1].times do |y|
@@ -29,12 +23,71 @@ class MinesweeperBoard
     end
   end
 
+  def size_selector
+    puts "Please select a board size \n (L)arge (M)edium or (S)mall."
+    size_selector = gets.chomp.upcase
+    size_selector = case size_selector
+    when "L"
+      [16,16]
+    when "M"
+      [9,9]
+    when "S"
+      [3,3]
+    end
+  end
+
+  def game_over?
+    game_won? || game_lost?
+  end
+
+  def game_won?
+    num_of_tiles = @size[0] * @size[1]
+    num_of_mines = @board.map { |coord, tile| tile.has_mine? }.count(true)
+    num_of_revealed = @board.map { |coord, tile| tile.is_revealed? }.count(true)
+    return true if num_of_mines + num_of_revealed == num_of_tiles
+    false
+  end
+
+  def game_lost?
+    @board.each { |coord, tile| return true if tile.has_mine? && tile.is_revealed? }
+    false
+  end
+
+
+  def play_move(move)
+    move = move.split
+    @board[[move[1].to_i,move[2].to_i]].reveal  if move.first == "r"
+    @board[[move[1].to_i,move[2].to_i]].toggle_flag  if move.first == "f"
+  end
+
+
+  def play_game
+    @size = size_selector
+    build_board
+    puts "Let's begin"
+    until game_over?
+      display_board
+      puts "Choose to reveal using format r x y. \n Choose to flag using format f x y \n (S)ave or (L)oad"
+      move = gets.chomp.downcase
+      play_move(move)
+    end
+    display_board
+    display_game_end_message
+  end
+
+  def display_game_end_message
+    puts "\n I'm sorry, you LOST!!" if game_lost?
+    puts "\n YOU WIN!!!!!" if game_won?
+  end
+
 end
+
+
+
+
 
 class Tile
   attr_accessor :coord
-
-
   def initialize(gameboard, coordinates)
     @coord = coordinates
     @gameboard = gameboard
@@ -81,6 +134,11 @@ class Tile
      @mined
    end
 
+   def is_revealed?
+     @revealed
+   end
+
+
    def adj_mine_count
      adj_tiles.map do |x|
        x.has_mine?
@@ -88,19 +146,18 @@ class Tile
    end
 
    def display_tile
+     return "F" if @flagged
      return "*" unless @revealed
      return "M" if @mined
      return adj_mine_count.to_s unless adj_mine_count == 0
      return " " if adj_mine_count == 0
-     return "F" if @flagged
+
 
    end
 
 end
 
 
-joe = MinesweeperBoard.new([9,9])
-#joe.board.each {|key, val| val.reveal}
-#joe.board[[1,2]].set_mine
-joe.board[[1,2]].reveal
- joe.display_board
+john = MinesweeperBoard.new
+john.play_game
+
